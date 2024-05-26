@@ -1,0 +1,112 @@
+:root{
+    --dark-blue:#0c8aa0;
+    --light-grey:#f8f9fa;
+    --blue:#007bff;
+    --black:#333;
+ }
+.index-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.container__index-product {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.index__fetch-product {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fetch-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-image img {
+    max-width: 200px;
+    width: 100%;
+    height: 100%;
+    max-height: 200px;
+
+}
+
+.product-content {
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.product-name {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--dark-blue);
+}
+.rupees-sign{
+    font-size: 16px;
+    font-weight: bold;
+}
+.product-price {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.detail-product {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: var(--dark-blue);
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+.detail-product:hover {
+    background-color: var(--dark-blue);
+}
+
+
+.add_to_cart {
+    margin-top: 10px;
+}
+.card-button{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--blue);
+    color: var(--light-grey);
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.error-message,.success-message{
+    background-color: var(--dark-blue);
+    border-radius: 5px;
+    max-width: 1000px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    color: white
+}
+.error-message span,.success-message span{
+    font-size: 20px;
+    font-weight: bold;
+}
+@media only screen and (max-width:768px){
+    .container__index-product{
+        width: auto;
+    }
+}

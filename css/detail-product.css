@@ -1,0 +1,89 @@
+:root{
+    --dark-blue:#0c8aa0;
+    --light-grey:#f8f9fa;
+    --blue:#007bff;
+    --black:#333;
+ }
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.product-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 65px;
+}
+
+.product-image img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+    width: 50%;
+}
+
+.product-info h2 {
+    margin-top: 0;
+    color: #333333;
+}
+
+.product-price {
+    color: var(--dark-blue);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.product-description {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #555555;
+}
+
+.form-submit {
+    margin-top: 20px;
+}
+.card-button{
+    background-color: var(--dark-blue);
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.card-button:hover{
+    background-color: var(--dark-blue);
+}
+.error-message,.success-message{
+    background-color: var(--dark-blue);
+    border-radius: 5px;
+    max-width: 1000px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    color: white;
+    margin-bottom: 50px;
+}
+.error-message span,.success-message span{
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+@media only screen and (max-width:768px){
+    .product-details{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .product-info{
+        width: auto;
+        text-align: center;
+    }
+}

@@ -1,0 +1,17 @@
+:root{
+    --dark-blue:#0c8aa0;
+    --light-grey:#f8f9fa;
+    --blue:#007bff;
+    --black:#333;
+ }
+.header{
+    text-align: center;
+    color: var(--dark-blue);
+}
+.content{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.content p{
+    margin-top: 20px;
+}

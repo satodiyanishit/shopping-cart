@@ -1,0 +1,56 @@
+
+/* Container styling */
+.container {
+    margin-top: 20px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Delete button styling */
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    /* Table overflow handling */
+    table {
+        overflow-x: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* Responsive table styling */
+    th, td {
+        padding: 8px;
+    }
+
+    /* Center align delete button on smaller screens */
+    .delete-btn {
+        display: block;
+        margin: 0 auto;
+    }
+}

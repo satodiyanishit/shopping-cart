@@ -1,0 +1,29 @@
+/* admin_components.css */
+ h2{
+    color: #0c8aa0;
+ }
+.order-details {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.order-details p {
+    margin: 5px 0;
+}
+
+.order-details p strong {
+    margin-right: 10px;
+    color: #0c8aa0; 
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .order-details {
+        padding: 10px;
+    }
+}

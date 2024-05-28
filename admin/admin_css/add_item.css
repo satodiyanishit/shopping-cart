@@ -1,0 +1,117 @@
+:root{
+    --dark-blue:#0c8aa0;
+    --light-grey:#f8f9fa;
+    --blue:#007bff;
+    --black:#333;
+ }
+.add__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px;
+}
+.item-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--light-grey);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    max-width: 500px;
+    width: 100%;
+}
+.item-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+.form-input{
+    display: flex;
+    flex-direction: column;
+}
+.item-form h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--dark-blue);
+}
+.form-input label{
+    font-size: 14px;
+}
+.form-input input,.form-input select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-input .item-text{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-input .button{
+    color: var(--light-grey);
+    background-color: var(--dark-blue);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.delete-button{
+    color: var(--light-grey);
+    background-color: red;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+}
+.item-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item-list h4{
+    font-size: 20px;
+}
+.update-item{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.update-item .item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border:2px solid var(--dark-blue);
+    padding: 20px;
+    border-radius: 5px;
+}
+.item img{
+    width: 100%;
+    max-height: 250px;
+}
+.item-details{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.item-details h5{
+    font-size: 19px;
+}
+.item-details a{
+    text-decoration: none;
+    background-color: var(--dark-blue);
+    color: var(--light-grey);
+    font-weight: 500;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 19px;
+}
+@media only screen and (max-width:768px){
+    .add__item{
+        margin: 80px 0;
+    }
+}

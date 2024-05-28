@@ -1,0 +1,108 @@
+:root{
+    --dark-blue:#0c8aa0;
+    --light-grey:#f8f9fa;
+    --blue:#007bff;
+    --black:#333;
+ }
+ .add__brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px;
+}
+.brand-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    background-color: var(--light-grey);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px;
+}
+.brand-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+.form-input{
+    display: flex;
+    flex-direction: column;
+}
+.brand-form h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--dark-blue);
+}
+.form-input label{
+    font-size: 14px;
+}
+.form-input input,.form-input select{
+    padding: 10px;
+    border: 1px solid var(--light-grey);
+    border-radius: 5px;
+    width: 100%;
+}
+.form-input .button{
+    color: var(--light-grey);
+    background-color: var(--dark-blue);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.brand-list{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+.brand-list h4{
+    font-size: 20px;
+}
+.update-brand{
+    display: flex;
+    gap: 9px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.brand{
+    border: 2px solid  var(--dark-blue);
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 1fr;
+    border-radius: 5px;
+}
+.brand-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brand-image img{
+    max-width: 110px;
+    max-height: 110px;
+}
+.brand-content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.brand-content h5{
+    font-size: 19px;
+    text-align: center;
+}
+.brand-content a{
+    text-decoration: none;
+    background-color: var(--dark-blue);
+    color: var(--light-grey);
+    font-weight: 500;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 19px;
+}
+.form-input .delete-button{
+    background-color: #ff0000;
+    color: var(--light-grey);
+}

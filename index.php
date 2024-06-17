@@ -23,6 +23,7 @@ $stmt_products->execute();
 $result_products = $stmt_products->get_result();
 ?>
 
+<!-- HTML starts -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -98,5 +99,4 @@ $result_products = $stmt_products->get_result();
     <script type="text/javascript" src="./javascript/slick.js"></script>
     <script type="text/javascript" src="./javascript/remove.js"></script>
 </body>
-
 </html>

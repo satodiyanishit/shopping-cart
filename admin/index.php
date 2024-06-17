@@ -18,6 +18,8 @@ if (isset($_POST['delete'])) {
 }
 
 ?>
+
+<!-- HTML starts -->
 <!DOCTYPE html>
 <html lang="en">
 
